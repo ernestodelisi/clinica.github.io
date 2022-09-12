@@ -1,3 +1,44 @@
+
+.titles{
+  
+  font-size: 30px;
+}
+/* Estilos parte 1 */
+*{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+@media screen {
+  
+}
+.carousel{
+  display: flex;
+}
+.cardMedicx{
+  transition: all 0.45s ease-in;
+  width: 33vw;
+  padding: 0.5em;
+  border: #80A48F 1px groove;
+  margin: 0.5em;
+  box-sizing: border-box;
+}
+.cardTitle{
+  background-color: #81C89F;
+  color: whitesmoke;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  
+}
+.cardFooter{
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+/* Estilos parte 3 */
 .footer {
   border: 1px outset grey;
   background-color: lightgray;
@@ -16,9 +57,4 @@
 .footer-info {
     text-align: center;
     font-style: italic;
-}
-
-.titles{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
 }
