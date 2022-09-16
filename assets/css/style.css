@@ -46,20 +46,29 @@
 
 .opinions{
   transition: all 0.45s ease-in;
-  width: 50vw;
+  width: 40vw;
   padding: 0.5em;
-  border: #80A48F 1px groove;
   margin: 0.5em;
   box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .score-bar{
   transition: all 0.45s ease-in;
-  width: 50vw;
+  width: 60vw;
   padding: 0.5em;
-  border: #80A48F 1px groove;
   margin: 0.5em;
   box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.borders-box{
+  transition: all 0.45s ease-in;
+  width: 15vw;
+  padding: 0.5em;
+  margin: 0.5em;
+  box-sizing: border-box;
+
 }
 
 .score{
