@@ -9,8 +9,40 @@
   /* text-align: justify;  -- Sofi, te lo comente porque no me dejaba centrar un texto, si queres despues buscamos la forma.*/
 }
 
-@media screen {
-  
+@media (max-width:768px){ /*tablet*/
+ 
+  .cardTitle{
+    background-color: #CDCB62;
+    color: #E7E458;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+@media (max-width:440px){ /*celular*/
+ 
+  .cardTitle{
+    background-color: #E76F58;
+    color: #FCEDEA;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+  }
+ }
+ 
+@media (min-width:769px){ /*notebook*/
+ 
+  .cardTitle{
+    background-color: #58E760;
+    color: #EAFCEB;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+  }
 }
 .carousel{
   display: flex;
@@ -23,15 +55,7 @@
   margin: 0.5em;
   box-sizing: border-box;
 }
-.cardTitle{
-  background-color: #81C89F;
-  color: whitesmoke;
-  font-size: 1.5em;
-  font-style: italic;
-  font-weight: bold;
-  text-align: center;
 
-}
 .cardFooter{
   font-style: italic;
   font-weight: bold;
