@@ -9,18 +9,6 @@
   /* text-align: justify;  -- Sofi, te lo comente porque no me dejaba centrar un texto, si queres despues buscamos la forma.*/
 }
 
-@media (max-width:768px){ /*tablet*/
- 
-  .cardTitle{
-    background-color: #CDCB62;
-    color: #E7E458;
-    font-size: 1.5em;
-    font-style: italic;
-    font-weight: bold;
-    text-align: center;
-  }
-}
-
 @media (max-width:440px){ /*celular*/
  
   .cardTitle{
@@ -31,7 +19,44 @@
     font-weight: bold;
     text-align: center;
   }
+
+  
+.cardMedicx{
+  transition: all 0.45s ease-in;
+  width: 100%;
+  padding: 0.5em;
+  border: #80A48F 1px groove;
+  margin: 0.5em;
+  box-sizing: border-box;
+}
+
  }
+
+ 
+@media  (min-width:440px) and (max-width:768px){ /*tablet*/
+ 
+  .cardTitle{
+    background-color: #CDCB62;
+    color: #E7E458;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    width: 33vw;
+  }
+
+  
+.cardMedicx{
+  transition: all 0.45s ease-in;
+  width: 50%;
+  padding: 0.5em;
+  border: #80A48F 1px groove;
+  margin: 0.5em;
+  box-sizing: border-box;
+}
+
+}
+
  
 @media (min-width:769px){ /*notebook*/
  
@@ -43,19 +68,20 @@
     font-weight: bold;
     text-align: center;
   }
+    
+  .cardMedicx{
+    transition: all 0.45s ease-in;
+    width: 33%;
+    padding: 0.5em;
+    border: #80A48F 1px groove;
+    margin: 0.5em;
+    box-sizing: border-box;
+  }
+
 }
 .carousel{
   display: flex;
 }
-.cardMedicx{
-  transition: all 0.45s ease-in;
-  width: 33vw;
-  padding: 0.5em;
-  border: #80A48F 1px groove;
-  margin: 0.5em;
-  box-sizing: border-box;
-}
-
 .cardFooter{
   font-style: italic;
   font-weight: bold;
