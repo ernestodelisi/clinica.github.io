@@ -23,7 +23,7 @@
   
 .cardMedicx{
   transition: all 0.45s ease-in;
-  width: 100%;
+  width: 90%;
   padding: 0.5em;
   border: #80A48F 1px groove;
   margin: 0.5em;
@@ -48,11 +48,11 @@
   
 .cardMedicx{
   transition: all 0.45s ease-in;
-  width: 50%;
+  width: 45%;
   padding: 0.5em;
   border: #80A48F 1px groove;
   margin: 0.5em;
-  box-sizing: border-box;
+  box-sizing:content-box;
 }
 
 }
@@ -71,7 +71,7 @@
     
   .cardMedicx{
     transition: all 0.45s ease-in;
-    width: 33%;
+    width: 30%;
     padding: 0.5em;
     border: #80A48F 1px groove;
     margin: 0.5em;
@@ -81,6 +81,8 @@
 }
 .carousel{
   display: flex;
+  flex-wrap: wrap;
+  align-content: center;
 }
 .cardFooter{
   font-style: italic;
