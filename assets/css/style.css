@@ -10,6 +10,7 @@
 }
 .origin-menu{
   display: none;
+  width: 25px; height: 25px;
 }
 
 .menu{
