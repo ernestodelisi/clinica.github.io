@@ -8,9 +8,57 @@
   font-size: 1em;
   /* text-align: justify;  -- Sofi, te lo comente porque no me dejaba centrar un texto, si queres despues buscamos la forma.*/
 }
+.origin-menu{
+  display: none;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(61, 87, 171);
+  color: #FCEDEA;
+  border-bottom: 1px solid rgb(116,121,135);
+  padding-top: 2%;
+}
+
+.menu ul a{
+  text-decoration: none;
+  margin-left: 20px;
+  color: rgb(228, 232, 246);
+  vertical-align: middle;
+}
+
+.menu ul a:hover{
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1.2em;
+  background-color: rgb(228, 232, 246);
+  color: rgb(39, 73, 186);
+  transition: all 0.45s ease-in;
+}
+
+.menu img{
+  width: 80px;
+  margin: 0 auto;
+  display: flex;
+}
+
+
 
 @media (max-width:440px){ /*celular*/
- 
+  .origin-menu{
+    display:flex;
+  }
+
+  .listMenu{
+    display:none;
+    visibility: inherit;
+    overflow: hidden;
+    flex-direction: column;    
+    list-style-type:none;
+  }
+
   .cardTitle{
     background-color: #E76F58;
     color: #FCEDEA;
@@ -23,18 +71,32 @@
   
 .cardMedicx{
   transition: all 0.45s ease-in;
+  border: 1px solid rgb(116,121,135);
   width: 90%;
   padding: 0.5em;
   border: #80A48F 1px groove;
   margin: 0.5em;
   box-sizing: border-box;
+  
 }
 
  }
 
  
 @media  (min-width:440px) and (max-width:768px){ /*tablet*/
- 
+  .origin-menu{
+    display:flex;
+  }
+
+  .listMenu{
+    display:none;
+    visibility: inherit;
+    overflow: hidden;
+    flex-direction: column;    
+    list-style-type:none;
+  }
+
+
   .cardTitle{
     background-color: #CDCB62;
     color: #E7E458;
@@ -48,6 +110,7 @@
   
 .cardMedicx{
   transition: all 0.45s ease-in;
+  border: 1px solid rgb(116,121,135);
   width: 45%;
   padding: 0.5em;
   border: #80A48F 1px groove;
@@ -59,9 +122,16 @@
 
  
 @media (min-width:769px){ /*notebook*/
- 
+  .listMenu{
+    display: flex;
+    visibility: inherit;
+    list-style-type:none;
+    
+    text-decoration: none;
+  }
+
   .cardTitle{
-    background-color: #58E760;
+    background-color: rgb(39,73,186);
     color: #EAFCEB;
     font-size: 1.5em;
     font-style: italic;
@@ -71,6 +141,7 @@
     
   .cardMedicx{
     transition: all 0.45s ease-in;
+    border: 1px solid rgb(116,121,135);
     width: 30%;
     padding: 0.5em;
     border: #80A48F 1px groove;
