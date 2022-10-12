@@ -8,58 +8,9 @@
   font-size: 1em;
   /* text-align: justify;  -- Sofi, te lo comente porque no me dejaba centrar un texto, si queres despues buscamos la forma.*/
 }
-.origin-menu{
-  display: none;
-  width: 25px; height: 25px;
-}
-
-.menu{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: rgb(61, 87, 171);
-  color: #FCEDEA;
-  border-bottom: 1px solid rgb(116,121,135);
-  padding-top: 2%;
-}
-
-.menu ul a{
-  text-decoration: none;
-  margin-left: 20px;
-  color: rgb(228, 232, 246);
-  vertical-align: middle;
-}
-
-.menu ul a:hover{
-  text-decoration: none;
-  margin-left: 20px;
-  font-size: 1.2em;
-  background-color: rgb(228, 232, 246);
-  color: rgb(39, 73, 186);
-  transition: all 0.45s ease-in;
-}
-
-.menu img{
-  width: 80px;
-  margin: 0 auto;
-  display: flex;
-}
-
-
 
 @media (max-width:440px){ /*celular*/
-  .origin-menu{
-    display:flex;
-  }
-
-  .listMenu{
-    display:none;
-    visibility: inherit;
-    overflow: hidden;
-    flex-direction: column;    
-    list-style-type:none;
-  }
-
+  
   .cardTitle{
     background-color: #E76F58;
     color: #FCEDEA;
@@ -67,6 +18,7 @@
     font-style: italic;
     font-weight: bold;
     text-align: center;
+   
   }
 
   
@@ -85,19 +37,7 @@
 
  
 @media  (min-width:440px) and (max-width:768px){ /*tablet*/
-  .origin-menu{
-    display:flex;
-  }
-
-  .listMenu{
-    display:none;
-    visibility: inherit;
-    overflow: hidden;
-    flex-direction: column;    
-    list-style-type:none;
-  }
-
-
+  
   .cardTitle{
     background-color: #CDCB62;
     color: #E7E458;
@@ -123,14 +63,7 @@
 
  
 @media (min-width:769px){ /*notebook*/
-  .listMenu{
-    display: flex;
-    visibility: inherit;
-    list-style-type:none;
-    
-    text-decoration: none;
-  }
-
+  
   .cardTitle{
     background-color: rgb(39,73,186);
     color: #EAFCEB;
@@ -296,4 +229,144 @@
   margin: 0.5em;
   box-sizing: border-box;
 
+}
+
+
+/* *** MENU HAMBURGUESA */
+
+header div.contenedor {
+  place-content: flex-start;
+}
+
+header div.contenedor nav{
+  width: 70%;
+  display: flex;
+  place-content: space-between;
+}
+
+#menu, #menu-check {
+  display: none;
+
+}
+
+header{    
+  background-color: #485DA4;
+  color: #FCEDEA;
+  text-decoration: none;
+  padding: .35em;
+}
+
+@media only screen and (min-width:701px){ /*cel y tablet*/
+  header div.contenedor, header div.contenedor ul, header div.contenedor ul li {
+    display: inline;
+  }
+
+  header div.contenedor ul a{
+    color: #FCEDEA;
+    text-decoration: none;
+    padding: .35em;
+  }
+
+  header div.contenedor nav{
+    width: 100%;
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  header h1{
+    margin: 0;
+
+  }
+
+  header h1 a {
+    padding: 0;
+  }
+
+  header div.contenedor{
+    display: flex;
+    place-content: space-between;
+  }
+
+    #menu-check:not(:checked) ~ nav{
+      display: none;
+    }
+
+    #menu-check:checked ~ nav{
+      display: block;
+    }
+
+    #menu{
+      display: block;
+      color: #485DA4;
+      background-color: #E4E8F6;
+      font-size: 1.2em;
+      font-weight: bold;
+      border: 3px solid #485DA4;
+      border-radius: 0.3em;
+      position: absolute;
+      right: 0.5em;
+      top: 0.5em;
+      z-index: 9999;
+    }
+
+    #menu:hover{
+      color: #E4E8F6;
+      background: #485DA4;
+      
+    } 
+    
+    #menu-cerrar{
+      display: none;
+    }
+
+    #menu-check:checked ~ label #menu-abrir{
+      display: none;
+    }
+
+    #menu-check:checked ~ label #menu-cerrar{
+      display: block;
+    }
+
+    header div.contenedor nav{
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      background-color: #747987;
+      padding-top: 0.5em;
+      padding-right: 1.5em;
+      opacity: 0.8;
+      color: #E4E8F6;
+      font-size: 1.4em;
+    }
+
+    header div.contenedor nav ul a {
+      color: #E4E8F6;
+      background-color: none;
+      text-decoration: none;
+    }
+
+    header div.contenedor nav ul{
+      display: block;
+    }
+
+    header div.contenedor nav ul, header div.contenedor nav ul li{
+      display: block;
+      text-align: right;
+    }
+
+    header div.contenedor nav .boton-invertido{
+      border: 0;
+      border-radius: 0;
+    }
+
+    header div.contenedor nav .boton-invertido:hover{
+      background: none;
+      color: #485DA4;
+    }
+
+    main {
+      text-align: center;
+    }
 }
