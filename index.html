@@ -162,7 +162,7 @@
 <input type="submit" value="Turnos WEB">
 
 
-    <div id="4">Obras sociales (Vale)</div>-->
+    <div id="4">Obras sociales (Vale)</div>
     <!-- reviews / Ernest -->
     <div  id="5" class="space-between-blocks">
       <div class="rectangle-empty-box">
@@ -212,16 +212,17 @@
           <div class="col-md-6 col-sm-12 col-xs-12">
             <!-- form init -->
             <div class="contact-form">
-              <form>
+              <form method="post" id="form">
                 <div class="form-group">
-                  <input class="form-control" placeholder="Nombre" type="text">
+                  <input class="form-control" placeholder="Nombre" type="text" id="name">
                 </div>
                 <div class="form-group">
-                  <input class="form-control" placeholder="Email" type="email">
+                  <input class="form-control" placeholder="Email" id="email">
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" cols="30" placeholder="Mensaje" rows="10"></textarea>
+                  <textarea class="form-control" cols="30" placeholder="Mensaje" rows="10" id="mensaje"></textarea>
                 </div><button class="btn" type="submit">Enviar</button>
+                <p class="warning" id="warnings" ></p>
               </form> 
               <!-- form end -->
             </div>
@@ -241,8 +242,15 @@
       </div>
     </div>
     <!-- footer info init -->
-    <p class="footer-info">
-      <a target="_blank" href="https://github.com/ernestodelisi/clinica.github.io">Codo a Codo - Grupo 4</a></p>
+    <div class="footer-info">
+      
+      <div><i class="footerfonts">Telefono: (011) 4372-8478</i></div>
+      <div><i class="footerfonts">WhatsApp:​ +54 9 11 6459-7415</i></div>
+      <div><i class="footerfonts">info@clinicamedica.com.ar</i></div>
+      <div><i class="footerfonts">Juncal 1446</i></div>
+      <br>
+      <a class="footerfonts" target="_blank" href="https://github.com/ernestodelisi/clinica.github.io">Codo a Codo - Grupo 4</a>
+    </div>
     <!-- footer info end -->
   </body>
   <footer>

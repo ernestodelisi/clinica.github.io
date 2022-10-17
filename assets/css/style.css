@@ -134,14 +134,14 @@
 .score{
   font-family: 'Secular One', sans-serif;
   font-size: 70px;
-  color: green;
+  color: rgb(39, 73, 186);
   text-align: center;
   font-weight: 800;
 }
 
 .material-symbols-outlined {
   font-size: 35px;
-  color: green;
+  color: rgb(61, 87, 171);
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
@@ -159,7 +159,7 @@
 }
 
 .Calif {
-  background-color: green;
+  background-color: rgb(61, 87, 171);
   color: white;
   padding: 0.1%;
   text-align: right;
@@ -189,12 +189,13 @@
 }
 
 .contact-form .btn {
-	background: rgb(182, 182, 195)  ;
+	background: rgb(83, 100, 157)  ;
 	text-transform: uppercase;
 	font-weight: 700;
 	padding: 10px 50px;
 	letter-spacing: 2px;
   width: 100%;
+  color: white;
 }
 
 .map-area {
@@ -213,8 +214,19 @@
 .footer-info {
   text-align: center;
   font-style: 'Open Sans', sans-serif;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 180px;
+  background-color: rgb(94, 107, 149);
+  text-align: center;
+  padding: 20px;
 }
 
+.footerfonts {
+  color: white
+
+}
 
 /* flexbox transparente entre secciones */
 
@@ -232,6 +244,16 @@
 
 }
 
+/* *** Validaciones Formulario de consulta */
+.warning{
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: rgb(39, 73, 186);
+  padding-top: 20px;
+  font-style: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
 
 /* *** MENU HAMBURGUESA */
 
