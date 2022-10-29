@@ -6,7 +6,23 @@
 *{
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  /* text-align: justify;  -- Sofi, te lo comente porque no me dejaba centrar un texto, si queres despues buscamos la forma.*/
+}
+@keyframes changeColor {0% {
+  background: #2749BA; /* Primer fotograma */
+  } 50% {
+  background: #E4E8F6; /* Segundo fotograma */
+  } 100% {
+  background: #747987; /* Último fotograma */
+  }
+  }
+  .anim { background: grey;color: #FFF; width: 150px; height: 150px;
+  animation: changeColor 2s ease 0 infinite; /* Relaciona con @keyframes */
+  }
+
+  
+.cardTitle{
+animation: changeColor 5s linear 0.5s
+4 normal forwards running;
 }
 
 @media (max-width:440px){ /*celular*/
@@ -17,11 +33,9 @@
     font-size: 1.5em;
     font-style: italic;
     font-weight: bold;
-    text-align: center;
-   
+    text-align: center;   
   }
 
-  
 .cardMedicx{
   transition: all 0.45s ease-in;
   border: 1px solid rgb(116,121,135);
@@ -30,7 +44,7 @@
   border: #80A48F 1px groove;
   margin: 0.5em;
   box-sizing: border-box;
-  
+  text-align: justify; 
 }
 
  }
@@ -63,7 +77,6 @@
 
  
 @media (min-width:769px){ /*notebook*/
-  
   .cardTitle{
     background-color: rgb(39,73,186);
     color: #EAFCEB;
@@ -74,7 +87,7 @@
   }
     
   .cardMedicx{
-    transition: all 0.45s ease-in;
+    transition: all 1s ease-in;
     border: 1px solid rgb(116,121,135);
     width: 30%;
     padding: 0.5em;
